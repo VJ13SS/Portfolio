@@ -1,0 +1,51 @@
+.about{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-block: 50px;
+}
+
+.about h1{
+    letter-spacing: 2px;
+}
+
+.about ul{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.about ul li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.about ul li h3{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.about ul li a{
+    text-decoration:underline ;
+}
+
+.about p{
+    max-width: 75%;
+    font-weight: 500;
+}
+
+.profile-summary{
+    
+    text-align: center;
+    font-size: 1rem;
+    line-height: 30px;
+}

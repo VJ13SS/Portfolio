@@ -1,0 +1,51 @@
+.skills{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding-block: 25px;
+}
+
+.skills h1{
+    letter-spacing: 2px;
+}
+
+.skills .skill-set{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-set h2{
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.skill-set ul{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.skill-set ul li{
+    display: flex;
+    gap: 10px;
+}
+
+.skill-set ul li h3{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.skill-set ul li p{
+    font-weight: 500;
+}

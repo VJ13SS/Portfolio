@@ -1,0 +1,30 @@
+.milestones{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding-block: 50px;
+}
+
+.milestones h1{
+    letter-spacing: 2px;
+}
+
+.milestones .achivements{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.achivements li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.achivements li span{
+    display: flex;
+}
