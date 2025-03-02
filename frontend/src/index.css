@@ -17,6 +17,9 @@ a{
   color: inherit;
 }
 
+ul li{
+  list-style: none;
+}
 
 .app{
   width: 100%;

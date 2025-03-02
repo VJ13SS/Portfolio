@@ -53,4 +53,47 @@ const projectsInfo = [
   },
 ];
 
+export const other_projects = [
+  {
+    image:'image',
+    description:'desc',
+    links: [
+      {
+        github: "http://localhost:5173/",
+        github: "http://localhost:5173/",
+      },
+    ],
+  },
+  {
+    image:'image',
+    description:'desc',
+    links: [
+      {
+        github: "http://localhost:5173/",
+        github: "http://localhost:5173/",
+      },
+    ],
+  },
+  {
+    image:'image',
+    description:'desc',
+    links: [
+      {
+        github: "http://localhost:5173/",
+        github: "http://localhost:5173/",
+      },
+    ],
+  },
+  {
+    image:'image',
+    description:'desc',
+    links: [
+      {
+        github: "http://localhost:5173/",
+        github: "http://localhost:5173/",
+      },
+    ],
+  },
+]
+
 export default projectsInfo;

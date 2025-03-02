@@ -3,7 +3,7 @@ import achievements from './myMilestones'
 
 export default function Milestones(){
     return(
-        <div className="milestones">
+        <div className="milestones" id='milestones'>
             <h1>Milestones in my Journey</h1>
             <ul className="achivements">
                 {achievements.map((achievement,index) => (

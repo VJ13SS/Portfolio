@@ -1,4 +1,5 @@
 import About from "./components/about/about";
+import Events from "./components/events/events";
 import Milestones from "./components/milestones/milestones";
 import Navbar from "./components/navbar/navbar";
 import Projects from "./components/projects/projects";
@@ -15,6 +16,7 @@ export default function App(){
       <Skills />
       <Projects />
       <Milestones />
+      <Events />
     </div>
   )
 }

@@ -2,7 +2,7 @@ import "./about.css";
 
 export default function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <h1>About Me</h1>
       <ul>
         <li>
@@ -62,6 +62,7 @@ export default function About() {
         strong passion,ability to develop impactful software solutins.Eager to
         contribute to innovative tech projects.
       </p>
+      <p>Get My Resume Here!</p>
     </div>
   );
 }

@@ -5,7 +5,8 @@
     gap: 25px;
     justify-content: center;
     align-items: center;
-    padding-block: 35px;
+    padding-top: 50px;
+    padding-bottom: 35px;
 }
 
 .projects h1{
@@ -19,6 +20,7 @@
     justify-content: center;
     gap: 13px;
     width: 90%;
+    margin-bottom: 50px;
 }
 
 .my-projects .project{
@@ -32,10 +34,6 @@
     gap: 5%;
     justify-content: center;
     align-items: center;
-}
-
-.my-projects .project:nth-child(4){
-    border: none;
 }
 
 .project:hover{
@@ -62,4 +60,18 @@
 
 .project-details p{
     max-width: 80%;
+}
+
+.other-projects{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.other-project{
+    height: 170px;
+    width: 220px;
+    border: 1px solid black;
 }
