@@ -12,8 +12,8 @@ export default function Services() {
           <p>
             I build responsive,fast, and user friendly websites using
             technologies like React,Flask and more.Whether its a business
-            site,portfolio or custom web app.I encure clear code and seamless
-            usser experience.
+            site,portfolio or custom web app.I ensure clear code and seamless
+            user experience.
           </p>
           <span>Lets create something great !</span>
           <h6>**check my <a href="#">LinkedIn </a>to see my works</h6>
