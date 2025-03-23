@@ -19,9 +19,9 @@ export default function About() {
           a strong passion,ability to develop impactful software solutins.Eager
           to contribute to innovative tech projects.
         </p>
-        <h6>**Visit My <a href="#">Linkedin</a> to see my works</h6>
+        <h6>**Visit My <a href="https://www.linkedin.com/in/viswajith-s-connect">Linkedin</a> to see my works</h6>
 
-        <a href="/chat_response.pdf" download><button>Get My Resume</button></a>
+        <a href="/Viswajith_S.pdf" download><button>Get My Resume</button></a>
         <div className="other-details">
           <div className="header">
             <h3
@@ -126,6 +126,7 @@ export default function About() {
                   <span>GitHub</span>
                   <a href="#">Github</a>
                 </p>
+                <p><span>LinkedIn</span> <a href= "https://www.linkedin.com/in/viswajith-s-connect">LinkedIn</a></p>
               </div>
             )}
           </div>
