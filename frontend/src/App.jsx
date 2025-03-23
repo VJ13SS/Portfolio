@@ -16,9 +16,10 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => setOffset(window.scrollY);
+    
     window.addEventListener("scroll", handleScroll);
-    return window.removeEventListener("scroll", handleScroll);
-  }, [offset]);
+    return () => window.removeEventListener("scroll", handleScroll); // ✅ Correct cleanup
+  }, []);
 
   const [displaySidebar, setDisplaySidebar] = useState(false);
   const toggleSidebar = () => {
@@ -34,7 +35,7 @@ export default function App() {
     <div
       className="app"
       style={{
-        backgroundPositionY: `${offset * 0.5}px`,
+        "--scroll-offset": `${offset * 0.5}px`, // ✅ Dynamic CSS variable
         overflowY: displaySidebar ? "hidden" : "",
       }}
     >
