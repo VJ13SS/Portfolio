@@ -2,6 +2,9 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import "./contact.css";
 
 export default function Contact() {
+  //https://www.linkedin.com/in/viswajith-s-connect
+  //https://github.com/VJ13SS
+  //https://leetcode.com/u/Viswajith_s/
   return (
     <div className="contact" id="contact">
       <span>Feel Free To Connect</span>
