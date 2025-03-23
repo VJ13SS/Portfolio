@@ -118,13 +118,13 @@ export default function About() {
                   <span>Sub Domain</span>Machine Learning
                 </p>
                 <p>
-                  <span>LeetCode</span> <a href="#">LeetCode</a>
+                  <span>LeetCode</span> <a href="https://leetcode.com/u/Viswajith_s/">LeetCode</a>
                 </p>
 
                 <p>
                   {" "}
                   <span>GitHub</span>
-                  <a href="#">Github</a>
+                  <a href="https://github.com/VJ13SS">Github</a>
                 </p>
                 <p><span>LinkedIn</span> <a href= "https://www.linkedin.com/in/viswajith-s-connect">LinkedIn</a></p>
               </div>
