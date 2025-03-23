@@ -38,7 +38,7 @@ ul li{
   overflow-x: hidden;
 }
 
-/* Create parallax background */
+/* Background stays fixed while scrolling */
 .app::before {
   content: "";
   position: fixed;
@@ -46,11 +46,10 @@ ul li{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/food_18.png'); /* ✅ Use correct path */
+  background-image: url('/food_18.png'); /* ✅ Correct image path */
   background-size: cover;
-  background-position: center;
-  transform: translateY(var(--scroll-offset)); /* ✅ Dynamic movement */
-  will-change: transform;
+  background-position: center calc(var(--scroll-offset)); /* ✅ Moves only inside background */
+  will-change: background-position;
   z-index: -1; /* ✅ Keeps it behind everything */
 }
 
