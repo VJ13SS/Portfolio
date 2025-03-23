@@ -3,36 +3,34 @@ import Navlinks from "../sidebar/navlinks";
 import "./navbar.css";
 import { FaBars } from "react-icons/fa";
 
-export default function Navbar() {
-
+export default function Navbar({toggleSidebar}) {
+  
     const [category,setCategory] = useState('home')
 
   return (
     <nav>
       <div className="nav-left">
-        <h2>VISWAJITH S</h2>
+        <h3><span>VISW</span>A<span>JITH</span>.S </h3>
       </div>
+      <FaBars onClick={toggleSidebar} className="display-sidebar"/>
       <ul>
-        <li>
-          <a href="#" style={{textDecoration:category === 'home'?'underline':''}} onClick={() => setCategory('home')}>Home</a>
+        <li className={category === 'home'?'is-active':''}>
+          <a href="#home" onClick={() => setCategory('home')}>Home</a>
         </li>
-        <li>
-          <a href="#about" style={{textDecoration:category === 'about'?'underline':''}} onClick={() => setCategory('about')}>About Me</a>
+        <li className={category === 'about'?'is-active':''}>
+          <a href="#about" onClick={() => setCategory('about')}>About Me</a>
         </li>
-        <li>
-          <a href="#skills" style={{textDecoration:category === 'skills'?'underline':''}} onClick={() => setCategory('skills')}>Skills & Tech Stack</a>
+        <li className={category === 'projects'?'is-active':''}>
+          <a href="#projects" onClick={() => setCategory('projects')}>Projects</a>
         </li>
-        <li>
-          <a href="#projects" style={{textDecoration:category === 'projects'?'underline':''}} onClick={() => setCategory('projects')}>Projects</a>
+        <li className={category === 'services'?'is-active':''}>
+          <a href="#services" onClick={() => setCategory('services')}>Services</a>
         </li>
-        <li>
-          <a href="#milestones" style={{textDecoration:category === 'milestones'?'underline':''}} onClick={() => setCategory('milestones')}>Milestones</a>
+        <li className={category === 'events'?'is-active':''}>
+          <a href="#events" onClick={() => setCategory('events')}>Events</a>
         </li>
-        <li>
-          <a href="#events" style={{textDecoration:category === 'events'?'underline':''}} onClick={() => setCategory('events')}>Events</a>
-        </li>
-        <li>
-          <a href="#" style={{textDecoration:category === 'contact'?'underline':''}} onClick={() => setCategory('contact')}>Contact</a>
+        <li className={category === 'contact'?'is-active':''}>
+          <a href="#contact" onClick={() => setCategory('contact')}>Contact</a>
         </li>
       </ul>
     </nav>

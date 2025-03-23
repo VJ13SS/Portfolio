@@ -1,0 +1,26 @@
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+   padding-block: 10px;
+}
+
+.contact span{
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.links{
+    display: flex;
+    gap: 10px;
+    background-color: black;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}

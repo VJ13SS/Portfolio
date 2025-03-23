@@ -10,6 +10,12 @@
 
 body{
   min-height: 100vh;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+body.no-scroll{
+  overflow-y: hidden;
 }
 
 a{
@@ -22,8 +28,23 @@ ul li{
 }
 
 .app{
+  position: relative;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 200vh;
+  background-image: url('food_18.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: background-position 0.1s ease-out;
+  overflow-x: hidden;
+}
+
+hr{
+  width: 80%;
+  margin-bottom: 20px;
+  
 }

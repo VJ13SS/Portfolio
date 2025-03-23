@@ -1,29 +1,30 @@
+import { FaTimes } from "react-icons/fa";
 import "./navlinks.css";
+import { useState } from "react";
 
-export default function Navlinks() {
+export default function Navlinks({ displaySidebar,toggleSidebar }) {
+  //  {displaySidebar && <span>Hello</span>}
   return (
-    <ul>
-      <li>
-        <a href="#">Home</a>
+    <div className="sidebar" style={{transform:displaySidebar?'translateX(0%)':'translateX(100%)'}}>
+    <ul className="sidebar-links">
+      <FaTimes className="close-icon" onClick={toggleSidebar} />
+      <li onClick={toggleSidebar}>
+        <a href="#home">Home</a>
       </li>
-      <li>
-        <a href="#">About Me</a>
+      <li onClick={toggleSidebar}>
+        <a href="#about">About Me</a>
       </li>
-      <li>
-        <a href="#">Skills & Tech Stack</a>
+      <li onClick={toggleSidebar}>
+        <a href="#projects">Projects</a>
       </li>
-      <li>
-        <a href="#">Projects</a>
+      <li onClick={toggleSidebar}>
+        <a href="#services">Services</a>
       </li>
-      <li>
-        <a href="#">Competetive Programming</a>
-      </li>
-      <li>
-        <a href="#">Resume</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
+      <li onClick={toggleSidebar}>
+        <a href="#contact">Contact Me</a>
       </li>
     </ul>
+    </div>
+    
   );
 }
