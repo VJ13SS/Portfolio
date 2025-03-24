@@ -1,16 +1,16 @@
 import { useState } from "react";
 import "./about.css";
+import { education, skills, achievements, others } from "./aboutInfo";
 
 export default function About() {
   const [category, setCategory] = useState("Education");
   return (
     <div className="about" id="about">
-      
       <div className="logo">
         <img src="./profile.jpg" alt="" />
       </div>
       <div className="about-description">
-      <h1>About Me</h1>
+        <h1>About Me</h1>
         <p className="profile-summary">
           I'm a 3rd Year Electronics And Communication Engineering Student
           passionate about Web Developement and Machine Learning.Practiced
@@ -19,9 +19,15 @@ export default function About() {
           a strong passion,ability to develop impactful software solutins.Eager
           to contribute to innovative tech projects.
         </p>
-        <h6>**Visit My <a href="https://www.linkedin.com/in/viswajith-s-connect">Linkedin</a> to see my works</h6>
+        <h6>
+          **Visit My{" "}
+          <a href="https://www.linkedin.com/in/viswajith-s-connect">Linkedin</a>{" "}
+          to see my works
+        </h6>
 
-        <a href="/Viswajith_S.pdf" download><button>Get My Resume</button></a>
+        <a href="/Viswajith_S.pdf" download>
+          <button>Get My Resume</button>
+        </a>
         <div className="other-details">
           <div className="header">
             <h3
@@ -39,6 +45,13 @@ export default function About() {
               Skills
             </h3>
             <h3
+              onClick={() => setCategory("Achievements")}
+              style={{}}
+              className={category == "Achievements" ? "header-active" : ""}
+            >
+              Achievements
+            </h3>
+            <h3
               onClick={() => setCategory("Other's")}
               style={{}}
               className={category == "Other's" ? "header-active" : ""}
@@ -49,76 +62,50 @@ export default function About() {
           <div className="information">
             {category == "Education" ? (
               <div className="info">
-                <p>
-                  <span>Engineering</span>BTech ECE (3rd Year , currently
-                  pursuing from NSSCE)
-                </p>
-
-                <p>
-                  <span>Higher Secondary</span>BSS Gurukulam Higher Secondary
-                  School, Alathur
-                </p>
-
-                <p>
-                  <span>High School</span>BSS Gurukulam Higher Secondary School,
-                  Alathur
-                </p>
+                {education.map((item, index) => {
+                  return (
+                    <p key={index}>
+                      <span>{item.type}</span>
+                      {item.institute}
+                    </p>
+                  );
+                })}
               </div>
             ) : category == "Skills" ? (
               <div className="info">
-                <p>
-                  <span>Frontend : </span>React , HTML , CSS , Javascript ,
-                  TypeScript(Basics)
-                </p>
-
-                <p>
-                  <span>Backend : </span>Flask , Node.js(Basics) , Express.js
-                  (Basics)
-                </p>
-
-                <p>
-                  <span>Databases :</span>SQL(basics) , MongoDB(Basics)
-                </p>
-
-                <p>
-                  <span>Api Integration : </span>Stripe , OMDB API , Email JS
-                </p>
-
-                <p>
-                  <span>Programming Languages : </span>Python , C++ , C
-                </p>
-
-                <p>
-                  <span>Libraries : </span>Numpy , Pandas , Matplotlib ,
-                  Scikitlearn
-                </p>
-
-                <p>
-                  <span>Version Control :</span> GitHub
-                </p>
-                <p>
-                  <span>Development Environments : </span>VS Code , Replit
-                </p>
+                {skills.map((item, index) => {
+                  return (
+                    <p key={index}>
+                      <span>{item.type}</span>
+                      {item.entities}
+                    </p>
+                  );
+                })}
+              </div>
+            ) : category === "Achievements" ? (
+              <div className="info">
+                {achievements.map((item, index) => {
+                  return (
+                    <p key={index}>
+                      <span>{item.type}</span>
+                      {item.description}
+                    </p>
+                  );
+                })}
               </div>
             ) : (
               <div className="info">
+                {others.map((item, index) => {
+                  return (
+                    <p key={index}>
+                      <span>{item.type}</span>
+                      {item.identifier}
+                    </p>
+                  );
+                })}
                 <p>
-                  <span>Location</span>Althur , Palakkad , Kerala
-                </p>
-
-                <p>
-                  <span>Code Name</span>VJ13SS
-                </p>
-
-                <p>
-                  <span>Domain</span>Web Development
-                </p>
-
-                <p>
-                  <span>Sub Domain</span>Machine Learning
-                </p>
-                <p>
-                  <span>LeetCode</span> <a href="https://leetcode.com/u/Viswajith_s/">LeetCode</a>
+                  <span>LeetCode</span>{" "}
+                  <a href="https://leetcode.com/u/Viswajith_s/">LeetCode</a>
                 </p>
 
                 <p>
@@ -126,7 +113,12 @@ export default function About() {
                   <span>GitHub</span>
                   <a href="https://github.com/VJ13SS">Github</a>
                 </p>
-                <p><span>LinkedIn</span> <a href= "https://www.linkedin.com/in/viswajith-s-connect">LinkedIn</a></p>
+                <p>
+                  <span>LinkedIn</span>{" "}
+                  <a href="https://www.linkedin.com/in/viswajith-s-connect">
+                    LinkedIn
+                  </a>
+                </p>
               </div>
             )}
           </div>

@@ -15,9 +15,11 @@
     flex-direction: column;
     gap: 5px;
     padding: 10px;
-    background-color: black;
     border-radius: 10px;
+    width: 100%;
+    
 }
+
 
 h1 span{
     color: rgb(250, 5, 86);

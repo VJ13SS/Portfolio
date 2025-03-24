@@ -4,7 +4,7 @@ nav{
     justify-content: space-between;
     padding-inline: 15px;
     align-items: center;
-    background-color: black;
+    background-color: transparent;
     width: 100%;
     min-height: 60px;
 }
