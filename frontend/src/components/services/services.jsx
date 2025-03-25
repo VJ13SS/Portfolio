@@ -16,7 +16,7 @@ export default function Services() {
             user experience.
           </p>
           <span>Lets create something great !</span>
-          <h6>**check my <a href="#">LinkedIn </a>to see my works</h6>
+          <h6>**check my <a href="https://www.linkedin.com/in/viswajith-s-connect">LinkedIn </a>to see my works</h6>
         </div>
       </div>
     </div>
