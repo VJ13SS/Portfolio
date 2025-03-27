@@ -7,7 +7,7 @@ export default function Navlinks({ displaySidebar,toggleSidebar }) {
   return (
     <div className="sidebar" style={{transform:displaySidebar?'translateX(0%)':'translateX(100%)'}}>
     <ul className="sidebar-links">
-      <FaTimes className="close-icon" onClick={toggleSidebar} />
+      <FaTimes className="close-icon" onClick={toggleSidebar} size={27} />
       <li onClick={toggleSidebar}>
         <a href="#home">Home</a>
       </li>

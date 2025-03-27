@@ -1,9 +1,10 @@
 .sidebar {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   transition: all 0.5s;
+  z-index: 11;
 }
 
 .sidebar-links {
@@ -25,9 +26,10 @@
 
 .close-icon {
   position: absolute;
-  right: 15px;
-  top: 20px;
+  right: 10px;
+  top: 15px;
   background-color: black;
+  border: 1px solid white;
 }
 
 @media (min-width: 765px) {

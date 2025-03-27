@@ -7,6 +7,9 @@ nav{
     background-color: transparent;
     width: 100%;
     min-height: 60px;
+    position: fixed;
+    top:0;
+    z-index: 11;
 }
 
 nav ul{
