@@ -25,7 +25,7 @@ export default function About() {
           to see my works
         </h6>
 
-        <a href="/Viswajith_S.pdf" download>
+        <a href="/VISWAJITH_S_RESUME.pdf" download>
           <button>Get My Resume</button>
         </a>
         <div className="other-details">
