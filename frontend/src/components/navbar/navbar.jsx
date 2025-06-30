@@ -25,23 +25,23 @@ export default function Navbar({ toggleSidebar }) {
         </h1>
       </div>
       <FaBars onClick={toggleSidebar} className="display-sidebar" />
-      <ul className={`${scrolled ? "scrolled" : ""}`}>
-        <li className={category === "home" ? "is-active" : ""}>
+      <ul>
+        <li className={`${category === "home" ? "is-active" : ""} ${scrolled ? "scrolled" : ""}`}>
           <a href="#home" onClick={() => setCategory("home")}>
             Home
           </a>
         </li>
-        <li className={category === "about" ? "is-active" : ""}>
+        <li className={`${category === "about" ? "is-active" : ""} ${scrolled ? "scrolled" : ""}`}>
           <a href="#about" onClick={() => setCategory("about")}>
             About Me
           </a>
         </li>
-        <li className={category === "projects" ? "is-active" : ""}>
+        <li className={`${category === "projects" ? "is-active" : ""} ${scrolled ? "scrolled" : ""}`}>
           <a href="#projects" onClick={() => setCategory("projects")}>
             Projects
           </a>
         </li>
-        <li className={category === "contact" ? "is-active" : ""}>
+        <li className={`${category === "contact" ? "is-active" : ""} ${scrolled ? "scrolled" : ""}`}>
           <a href="#contact" onClick={() => setCategory("contact")}>
             Contact
           </a>

@@ -5,12 +5,7 @@ import { education, skills, achievements, others } from "./aboutInfo";
 import { FaChartLine, FaLightbulb, FaMedal, FaTools } from "react-icons/fa";
 
 export default function About() {
-  /*
-        <h6>
-          **Visit My{" "}
-          <a href="https://www.linkedin.com/in/viswajith-s-connect">Linkedin</a>{" "}
-          to see my works
-        </h6>*/
+
   return (
     <div className="about" id="about">
       
@@ -28,6 +23,7 @@ export default function About() {
           a strong passion,ability to develop impactful software solutins.Eager
           to contribute to innovative tech projects.
         </p>
+        <a href="/VISWAJITH_S_RESUME.pdf" download>Get My Resume</a>
         </div>
         
       </div>

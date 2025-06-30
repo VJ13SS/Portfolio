@@ -52,7 +52,7 @@ img{
   overflow-x: hidden;
   background-color:black;
   background-position: center;
-  background-image: url('/an-evocative-interior-scene-featuring-a-textured-wall-painted-in-a-vibrant-gradient-bathed-in-a-blend-of-light-and-shadow-and-a-floor-with-a-cool-hue-free-photo.jpg');
+  background-image: url('/backgroundImg.jpg');
   background-size:cover;
 }
 

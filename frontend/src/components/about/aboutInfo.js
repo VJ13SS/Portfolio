@@ -5,7 +5,7 @@ export const education = [
 ]
 
 export const skills = [
-    {'type':'Frontend','entities':'React , HTML , CSS , Javascript , TypeScript(Basics)'},
+    {'type':'Frontend','entities':'React , HTML , CSS , Javascript , TailwindCSS , TypeScript(Basics)'},
     {'type':'Backend','entities':'Flask , Node.js , Express.js'},
     {'type':'Databases','entities':'MongoDB, SQL(basics)'},
     {'type':'Programming Languages','entities':'Python , C++ , C'},
