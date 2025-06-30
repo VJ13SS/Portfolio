@@ -96,15 +96,15 @@
 }
 
 .education{
-  background-image: url('education.jpg');
+  background-image: url('/education.jpg');
 }
 
 .skills{
-  background-image: url('skills.jpg');
+  background-image: url('/skills.jpg');
 }
 
 .achievements{
-  background-image: url('achievements.jpg');
+  background-image: url('/achievements.jpg');
 }
 
 .about__details:hover .about__card:not(:hover) {
