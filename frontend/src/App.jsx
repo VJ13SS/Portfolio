@@ -8,8 +8,6 @@ import Navlinks from "./components/sidebar/navlinks";
 import Header from "./components/header/header";
 
 export default function App() {
-  const [offset, setOffset] = useState(0); //to store how far the page has been scrolled
-
   const [displaySidebar, setDisplaySidebar] = useState(false);
   const toggleSidebar = () => {
     setDisplaySidebar((prev) => !prev);
@@ -21,15 +19,12 @@ export default function App() {
   };
 
   return (
-    <div
-      className="app"
-      
-    >
+    <div className="app">
       <Navbar toggleSidebar={toggleSidebar} />
       <Header />
       <About />
       <Projects />
-   
+
       <Navlinks displaySidebar={displaySidebar} toggleSidebar={toggleSidebar} />
       <Contact />
     </div>
