@@ -18,9 +18,6 @@ export default function Navlinks({ displaySidebar,toggleSidebar }) {
         <a href="#projects">Projects</a>
       </li>
       <li onClick={toggleSidebar}>
-        <a href="#services">Services</a>
-      </li>
-      <li onClick={toggleSidebar}>
         <a href="#contact">Contact Me</a>
       </li>
     </ul>
