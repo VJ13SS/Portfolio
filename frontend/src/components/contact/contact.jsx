@@ -3,9 +3,6 @@ import { SiGmail, SiLeetcode } from "react-icons/si";
 import "./contact.css";
 
 export default function Contact() {
-  //https://www.linkedin.com/in/viswajith-s-connect
-  //https://github.com/VJ13SS
-  //https://leetcode.com/u/Viswajith_s/
   return (
     <div className="contact" id="contact">
       <span>Connect Me</span>
@@ -24,7 +21,7 @@ export default function Contact() {
         >
           <SiGmail size={25} />
         </a>
-        <a href="#">
+        <a href="https://leetcode.com/u/Viswajith_s/">
           {" "}
           <SiLeetcode size={25} />
         </a>
